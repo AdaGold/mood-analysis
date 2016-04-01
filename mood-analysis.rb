@@ -31,12 +31,62 @@ text = [
 # puts analyze_mood(text[0])
 # puts analyze_mood(text[1])
 
-
-text.each do |day|
-  p text[0][0..4] + analyze_mood(day)
+def string_analysis(array)
+  array.each do |day|
+    p array[0][0..4] + analyze_mood(day)
+  end
 end
 
-#
-# def happy_days
-#   if :happy == 3 ?
-# end
+# string_analysis(text)
+# 3. Write a method called `happy_days` to determine how many logged entries it takes until there have been three :-) happy days.
+def happy_days(words)
+  count =[]
+  days = 0
+  words.each do |day|
+    moods = analyze_mood(day)[-3..-1]
+    count << moods.include?(":-)")
+      days += 1
+    if count.length == 3
+      puts "It takes #{days} entries for 3 happy days to occur"
+      break
+    end
+  end
+  puts "sorry, to many moods!"
+end
+
+# happy_days(text)
+
+# 4. Write a method called `overall_mood` to determine the most common mood across all logged entries.
+
+def overall_mood(words)
+  happy = []
+  sad = []
+  neutral = []
+
+  words.each do |day|
+    moods = analyze_mood(day)[-3..-1]
+    if moods.include?(":-)")
+      happy << moods
+    elsif moods.include?(":-(")
+      sad << moods
+    else
+      neutral << moods
+    end
+  end
+
+    p happy
+    p sad
+    p neutral
+
+      if happy.length > sad.length && neutral.length
+        puts "The most common mood is :-)"
+          return happy
+      elsif sad.length > happy.length && neutral.length
+        puts "The most common mood is :-("
+          return sad
+      else
+        puts "The most common mood is :-|"
+          return neutral
+      end
+end
+overall_mood(text)
