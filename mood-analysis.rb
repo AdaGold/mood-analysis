@@ -1,6 +1,6 @@
 FEELINGS = {
-  happy: %w(yay, good, great),
-  sad: %w(terrible, awful, horrible)
+  happy: %w(yay good great),
+  sad: %w(terrible awful horrible)
 }
 
 def analyze_mood(words)
@@ -28,5 +28,15 @@ text = [
   "05/11 Yay, yay, yay! I'm having a awfuly great day."
 ]
 
-puts analyze_mood(text[0])
-puts analyze_mood(text[1])
+# puts analyze_mood(text[0])
+# puts analyze_mood(text[1])
+
+
+text.each do |day|
+  p text[0][0..4] + analyze_mood(day)
+end
+
+#
+# def happy_days
+#   if :happy == 3 ?
+# end
