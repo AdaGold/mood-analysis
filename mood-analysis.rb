@@ -1,6 +1,6 @@
 FEELINGS = {
-  happy: %w(yay, good, great),
-  sad: %w(terrible, awful, horrible)
+  happy: %w(yay good great),
+  sad: %w(terrible awful horrible)
 }
 
 def analyze_mood(words)

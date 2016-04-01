@@ -54,7 +54,7 @@ Your result will look like:
 ...
 ```
 
-**think**: Why does 03/13 come out as _sad_ when it should be _happy_? How could we fix this?
+**think**: Why does 03/13 come out as _neutral_ when it should be _happy_? How could we fix this?
 
 2. To make the results a little more accurate, let's write and utilize a method called `strip_punctuation` to strip out the punctuation that affects the results. Namely, remove  exclamation marks (!), periods (.), commas (,), and hashtags (#).
 
