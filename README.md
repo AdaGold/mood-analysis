@@ -20,7 +20,7 @@ Explain what is happening on each of the following lines in the code.
 | 12     |
 | 13     |
 | 14     |
-| 17-19  |
+| 18-24  |
 
 ### Data Types
 What's the Data Type of the following?
@@ -45,7 +45,7 @@ What's the Data Type of the following?
 | What is the relationship between `text[0]`, `text[1]`, and `words`? |
 
 ### Assignment: Requirements
-1. Replace lines 31 and 32 and write a loop to print out each day and the emoticon that is associated by analyzing the mood of that day.
+1. Replace lines 36 and 37 and write a loop to print out each day and the emoticon that is associated by analyzing the mood of that day.
 
 Your result will look like:
 ```
