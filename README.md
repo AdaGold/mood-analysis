@@ -41,7 +41,7 @@ What's the Data Type of the following?
 |------------------------|-------
 | Why do we need line 9? |
 | What is the relationship between `words` and `word` (line 10)? |
-| Why doesn't line 19 have an associated if/condition? |
+| Why doesn't line 22 have an associated if/condition? |
 | What is the relationship between `text[0]`, `text[1]`, and `words`? |
 
 ### Assignment: Requirements
