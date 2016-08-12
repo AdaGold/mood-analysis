@@ -8,15 +8,20 @@ def analyze_mood(words)
   sad = 0
   words.downcase!
   words.split(" ").each do |word|
-    if FEELINGS[:happy].include? word
+    if FEELINGS[:happy].include?(word)
       happy += 1
-    elsif FEELINGS[:sad].include? word
+    elsif FEELINGS[:sad].include?(word)
       sad += 1
     end
   end
-  return ":-)" if happy > sad
-  return ":-(" if happy < sad
-  return ":-|"
+  
+  if happy > sad
+    return ":-)" 
+  elsif happy < sad
+    return ":-(" 
+  else
+    return ":-|"
+  end
 end
 
 text = [
