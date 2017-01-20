@@ -47,44 +47,44 @@ What's the Data Type of the following?
 ### Assignment: Requirements
 1. Replace lines 36 and 37 and write a loop to print out each day and the emoticon that is associated by analyzing the mood of that day.
 
-Your result will look like:
-```
-03/01  :-(
-03/13  :-|
-...
-```
+	Your result will look like:
+	```
+	03/01  :-(
+	03/13  :-|
+	...
+	```
 
-**think**: Why does 03/13 come out as _neutral_ when it should be _happy_? How could we fix this?
+	**think**: Why does 03/13 come out as _neutral_ when it should be _happy_? How could we fix this?
 
 2. To make the results a little more accurate, let's write and utilize a method called `strip_punctuation` to strip out the punctuation that affects the results. Namely, remove  exclamation marks (!), periods (.), commas (,), and hashtags (#).
 
-Your method should take a string as an argument and return the string without the above mentioned punctuation.
+	Your method should take a string as an argument and return the string without the above mentioned punctuation.
 
-After writing this method, our new result should be:
-```
-03/01  :-(
-03/13  :-)
-...
-```
+	After writing this method, our new result should be:
+	```
+	03/01  :-(
+	03/13  :-)
+	...
+	```
 
-**think**: Where should we call `strip_punctuation`? Does it matter? Why?
+	**think**: Where should we call `strip_punctuation`? Does it matter? Why?
 
 3. Write a method called `happy_days` to determine how many logged entries it takes until there have been three :-) happy days.
 
-Your output could be something like:
-```
-It takes 5 entries for 3 happy days to occur
-```
+	Your output could be something like:
+	```
+	It takes 5 entries for 3 happy days to occur
+	```
 
-**think**: What are you going to do if there aren't at least 3 happy days? Where do you need to handle that case?
+	**think**: What are you going to do if there aren't at least 3 happy days? 	Where do you need to handle that case?
 
 4. Write a method called `overall_mood` to determine the most common mood across all logged entries.
 
-Your output could be something like:
-```
-The most common mood is :-)
-```
+	Your output could be something like:
+	```
+	The most common mood is :-)
+	```
 
-**think**: Should you use an array or a hash to solve this problem? Why?
+	**think**: Should you use an array or a hash to solve this problem? Why?
 
-**think**: What if we eventually want to add feelings to our analysis? Can we write this code in a way that will prevent us from having to re-write it later?
+	**think**: What if we eventually want to add feelings to our analysis? Can we write this code in a way that will prevent us from having to re-write it later?
