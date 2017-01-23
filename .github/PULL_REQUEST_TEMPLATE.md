@@ -1,5 +1,5 @@
 # Mood Analysis
-Congratulations! You're submitting your assignment.
+Congratulations! You're submitting your assignment.  Before submitting your updated Ruby Code please answer the questions below from the README.
 
 ### What's Happening?
 Explain what is happening on each of the following lines in the code.
