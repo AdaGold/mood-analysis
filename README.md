@@ -47,44 +47,51 @@ What's the Data Type of the following?
 ### Assignment: Requirements
 1. Replace lines 36 and 37 and write a loop to print out each day and the emoticon that is associated by analyzing the mood of that day.
 
-Your result will look like:
-```
-03/01  :-(
-03/13  :-|
-...
-```
+	Your result will look like:
+	```
+	03/01  :-(
+	03/13  :-|
+	...
+	```
 
-**think**: Why does 03/13 come out as _neutral_ when it should be _happy_? How could we fix this?
+	#### Test & Verify
+	Run the resulting code & ensure that each day is printed with the correct emoticon.  **think** which does should be happy, which sad and which
+
+	**think**: Why does 03/13 come out as _neutral_ when it should be _happy_? How could we fix this?
 
 2. To make the results a little more accurate, let's write and utilize a method called `strip_punctuation` to strip out the punctuation that affects the results. Namely, remove  exclamation marks (!), periods (.), commas (,), and hashtags (#).
 
-Your method should take a string as an argument and return the string without the above mentioned punctuation.
+	Your method should take a string as an argument and return the string without the above mentioned punctuation.
 
-After writing this method, our new result should be:
-```
-03/01  :-(
-03/13  :-)
-...
-```
+	After writing this method, our new result should be:
+	```
+	03/01  :-(
+	03/13  :-)
+	...
+	```
 
-**think**: Where should we call `strip_punctuation`? Does it matter? Why?
+	#### Test & Verify
+	Run the resulting code & check to see if days where there is punctuation change.  You can also put test `puts` messages in your code to verify that your method is removing punctuation.  
+	
 
-3. Write a method called `happy_days` to determine how many logged entries it takes until there have been three :-) happy days.
+	**think**: Where should we call `strip_punctuation`? Does it matter? Why?
 
-Your output could be something like:
-```
-It takes 5 entries for 3 happy days to occur
-```
 
-**think**: What are you going to do if there aren't at least 3 happy days? Where do you need to handle that case?
+## Optional Enhancements
 
-4. Write a method called `overall_mood` to determine the most common mood across all logged entries.
 
-Your output could be something like:
-```
-The most common mood is :-)
-```
+1. Write a method called `happy_days` to determine how many logged entries it takes until there have been three :-) happy days.
 
-**think**: Should you use an array or a hash to solve this problem? Why?
+	Your output could be something like:
+	```
+	It takes 5 entries for 3 happy days to occur
+	```
 
-**think**: What if we eventually want to add feelings to our analysis? Can we write this code in a way that will prevent us from having to re-write it later?
+	**think**: What are you going to do if there aren't at least 3 happy days?  Where do you need to handle that case?
+
+2. Write a method called `overall_mood` to determine the most common mood across all logged entries.
+
+	Your output could be something like:
+	```
+	The most common mood is :-)
+	```
