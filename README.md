@@ -54,6 +54,9 @@ What's the Data Type of the following?
 	...
 	```
 
+	#### Test & Verify
+	Run the resulting code & ensure that each day is printed with the correct emoticon.  **think** which does should be happy, which sad and which
+
 	**think**: Why does 03/13 come out as _neutral_ when it should be _happy_? How could we fix this?
 
 2. To make the results a little more accurate, let's write and utilize a method called `strip_punctuation` to strip out the punctuation that affects the results. Namely, remove  exclamation marks (!), periods (.), commas (,), and hashtags (#).
@@ -64,8 +67,13 @@ What's the Data Type of the following?
 	```
 	03/01  :-(
 	03/13  :-)
-...
-```
+	...
+	```
+
+	#### Test & Verify
+	Run the resulting code & check to see if days where there is punctuation change.  You can also put test `puts` messages in your code to verify that your method is removing punctuation.  
+	
+
 	**think**: Where should we call `strip_punctuation`? Does it matter? Why?
 
 
