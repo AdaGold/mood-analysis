@@ -1,10 +1,10 @@
 # Mood Analysis: Hash Practice
 Let's practice interacting with Hashes (key-value pairings) by writing a program that creates hashes, stores data in hashes, retrieves data from hashes, and prints the contents of a hash.
 
-## mood-analysis.rb
+## Part 1: Reading the Program
 Take a look at [mood-analysis.rb](mood-analysis.rb).
 
-### What's Happening?
+### 1.1 What's Happening?
 Explain what is happening on each of the following lines in the code.
 
 | Line # | What's happening?
@@ -22,7 +22,7 @@ Explain what is happening on each of the following lines in the code.
 | 14     |
 | 18-24  |
 
-### Data Types
+### 1.2 Data Types
 What's the Data Type of the following?
 
 | Code                       | Data Type
@@ -36,7 +36,7 @@ What's the Data Type of the following?
 | FEELINGS[:happy].include?  |
 | analyze_mood(text)         |
 
-### Explaining the Code
+### 1.3 Explaining the Code
 | Question               | Answer
 |------------------------|-------
 | Why do we need line 9? |
@@ -44,8 +44,11 @@ What's the Data Type of the following?
 | Why doesn't line 22 have an associated if/condition? |
 | What is the relationship between `text[0]`, `text[1]`, and `words`? |
 
-### Assignment: Requirements
-1. Replace lines 36 and 37 and write a loop to print out each day and the emoticon that is associated by analyzing the mood of that day.
+## Part 2: Expanding the Program
+
+### 2.1 Analyzing All Days
+
+Replace lines 36 and 37 and write a loop to print out each day and the emoticon that is associated by analyzing the mood of that day.
 
 Your result will look like:
 ```
@@ -54,9 +57,11 @@ Your result will look like:
 ...
 ```
 
-**think**: Why does 03/13 come out as _neutral_ when it should be _happy_? How could we fix this?
+**Question:** Why does 03/13 come out as _neutral_ when it should be _happy_? How could we fix this?
 
-2. To make the results a little more accurate, let's write and utilize a method called `strip_punctuation` to strip out the punctuation that affects the results. Namely, remove  exclamation marks (!), periods (.), commas (,), and hashtags (#).
+### 2.2 Removing Punctuation
+
+To make the results a little more accurate, let's write and utilize a method called `strip_punctuation` to strip out the punctuation that affects the results. Namely, remove  exclamation marks (!), periods (.), commas (,), and hashtags (#).
 
 Your method should take a string as an argument and return the string without the above mentioned punctuation.
 
@@ -67,24 +72,28 @@ After writing this method, our new result should be:
 ...
 ```
 
-**think**: Where should we call `strip_punctuation`? Does it matter? Why?
+**Question:** Where should we call `strip_punctuation`? Does it matter? Why?
 
-3. Write a method called `happy_days` to determine how many logged entries it takes until there have been three :-) happy days.
+### 2.3 Happy Days
+
+Write a method called `happy_days` to determine how many logged entries it takes until there have been three :-) happy days.
 
 Your output could be something like:
 ```
 It takes 5 entries for 3 happy days to occur
 ```
 
-**think**: What are you going to do if there aren't at least 3 happy days? Where do you need to handle that case?
+**Question:** What are you going to do if there aren't at least 3 happy days? Where do you need to handle that case?
 
-4. Write a method called `overall_mood` to determine the most common mood across all logged entries.
+### 2.4 Overall Mood
+
+Write a method called `overall_mood` to determine the most common mood across all logged entries.
 
 Your output could be something like:
 ```
 The most common mood is :-)
 ```
 
-**think**: Should you use an array or a hash to solve this problem? Why?
+**Question:** Should you use an array or a hash to solve this problem? Why?
 
-**think**: What if we eventually want to add feelings to our analysis? Can we write this code in a way that will prevent us from having to re-write it later?
+**Question:** What if we eventually want to add more feelings to our analysis than just happy and sad? Can we write this code in a way that will prevent us from having to re-write it later?
